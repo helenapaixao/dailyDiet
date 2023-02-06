@@ -1,18 +1,25 @@
-import { StyleSheet, Text, View } from 'react-native';
-
+import { StatusBar } from "expo-status-bar";
+import {
+  useFonts,
+  Nunito_700Bold,
+  Nunito_400Regular,
+} from "@expo-google-fonts/nunito";
+import { NavigationContainer } from "@react-navigation/native";
+import { AppRoutes } from "./src/routes/app.routes";
+import { Loading } from "./src/components/Loading";
 export default function App() {
+  const [fontsLoaded] = useFonts({
+    Nunito_700Bold,
+    Nunito_400Regular,
+  });
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-    </View>
+    <>
+    
+      <NavigationContainer>
+      <StatusBar backgroundColor="transparent" translucent />
+      {fontsLoaded ? <AppRoutes  /> : <Loading />}
+      </NavigationContainer>
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
