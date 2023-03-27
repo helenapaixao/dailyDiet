@@ -12,7 +12,7 @@ export default function Home() {
         <Card />
       </Content>
       <TextTitle>Refeições</TextTitle>
-      <Button title="Nova Refeição" onPress={() => {}}  size={'m'} type={"secondary"}/>
+      <Button title="Nova Refeição" onPress={() => {}}  size='m' type="primary" />
     </Container>
   );
 }

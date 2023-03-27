@@ -23,7 +23,7 @@ export const ButtonContainer = styled.TouchableOpacity<ButtonProps>`
   border-radius: 6px;
 `;
 
-export const Title = styled.Text`
+export const Title = styled.Text<ButtonProps>`
   font-size: 14px;
   flex: 1;
   color: ${({ type }) =>
