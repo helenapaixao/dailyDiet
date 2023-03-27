@@ -1,0 +1,12 @@
+{
+    "font": {
+        "family": {
+            "nunito": {
+                "normal": "Nunito-Regular.ttf",
+                "bold": "Nunito-Bold.ttf",
+                "italics": "Nunito-Italic.ttf",
+                "bolditalics": "Nunito-BoldItalic.ttf"
+            }
+        }
+    }
+}

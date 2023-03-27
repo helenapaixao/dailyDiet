@@ -1,0 +1,16 @@
+{
+    "color": {
+        "gray_200": {
+            "value": "#333638"
+        },
+        "green_light": {
+            "value": "#E5F0DB"
+        },
+        "gray_600": {
+            "value": "#EFF0F0"
+        },
+        "red_light": {
+            "value": "#F4E6E7"
+        }
+    }
+}
