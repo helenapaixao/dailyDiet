@@ -26,7 +26,12 @@ export const ButtonContainer = styled.TouchableOpacity<ButtonProps>`
 export const Title = styled.Text`
   font-size: 14px;
   flex: 1;
-  color: #ffff;
+  color: ${({ type }) =>
+    type === "primary"
+      ? "#FFFF"
+      : type === "secondary"
+      ? "#333638"
+      : "#333638"};
   font-family: "Nunito_700Bold";
 `;
 

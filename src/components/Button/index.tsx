@@ -9,11 +9,6 @@ export type ButtonProps = TouchableHighlightProps & {
   type: 'primary' | 'secondary';
 };
 
-const BG_COLORS = {
-  primary: '#E5F0DB',
-  secondary: '#F4E6E7',
-}
-
 export function Button({ title, icon, size, type, onPress }: ButtonProps) {
   return (
     <ButtonContainer onPress={onPress} title={title} icon={icon} size={size} type={type}>
