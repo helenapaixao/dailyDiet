@@ -1,6 +1,5 @@
 import { Header } from "../../components/Header";
 import { Card } from "../../components/Card";
-import { HourDaily } from "../../components/HourDaily";
 import { Container, Content, TextTitle } from "./styles";
 import { Button } from "../../components/Button";
 
