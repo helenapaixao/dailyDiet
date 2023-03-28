@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const SafeAreaView = styled.SafeAreaView`
   flex: 1;
-  background: ${({ theme }) => theme.color.white};
+  background-color: "#FFF";
 `;
 
 export const ScrollView = styled.ScrollView.attrs(() => ({

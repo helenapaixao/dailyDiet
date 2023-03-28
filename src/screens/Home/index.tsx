@@ -1,9 +1,11 @@
+import { Text } from "react-native";
 import { Header } from "../../components/Header";
 import { Card } from "../../components/Card";
 import { Container, Content, TextTitle, ContainerButton} from "./styles";
 import { Button } from "../../components/Button";
 import { Entypo } from '@expo/vector-icons';
-import {} from '../../components/ScreenContainer'
+import ScreenContainer from '../../components/ScreenContainer'
+import { HourDaily } from "../../components/HourDaily";
 export default function Home() {
   return (
     <Container>
@@ -16,7 +18,13 @@ export default function Home() {
       <Button title="Nova Refeição" onPress={() => {}}  size='m' type="primary" icon={
         <Entypo name="plus" size={18} color="white" />
       }/>
+
       </ContainerButton>    
+      <ScreenContainer>
+        <HourDaily>sdsd</HourDaily>
+        <HourDaily>sdsd</HourDaily>
+        <HourDaily>sdsd</HourDaily>
+      </ScreenContainer>
     </Container>
   );
 }
