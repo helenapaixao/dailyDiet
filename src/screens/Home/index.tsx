@@ -25,6 +25,15 @@ export default function Home() {
         <TextDaily>12.08.23</TextDaily>
         </ViewDaily>
      
+        <HourDaily hour="20:00" content="X- Tudo" status="APROVED"/>
+        <HourDaily hour="16:00" content="Whey " status="WARNING"/>
+        <HourDaily hour="16:00" content="Whey " status="WARNING"/>
+        <HourDaily  hour="20:00" content="X- Tudo" status="APROVED"/>
+        <HourDaily hour="20:00" content="X- Tudo" status="APROVED" />
+        <ViewDaily>
+        <TextDaily>13.08.23</TextDaily>
+        </ViewDaily>
+     
         <HourDaily />
         <HourDaily />
         <HourDaily />
