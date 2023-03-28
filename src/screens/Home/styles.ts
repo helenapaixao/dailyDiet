@@ -23,3 +23,13 @@ align-items: center;
 justify-content: center;
 margin-top: 10px;
 `;
+
+export const ViewDaily = styled.View`
+margin-top: 30px;
+`;
+
+export const TextDaily = styled.Text`
+  font-family: "Nunito_700Bold";
+  font-size: 18px;
+
+`;

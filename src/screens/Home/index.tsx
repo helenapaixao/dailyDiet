@@ -1,7 +1,7 @@
 import { Text } from "react-native";
 import { Header } from "../../components/Header";
 import { Card } from "../../components/Card";
-import { Container, Content, TextTitle, ContainerButton} from "./styles";
+import { Container, Content, TextTitle, ContainerButton, ViewDaily, TextDaily} from "./styles";
 import { Button } from "../../components/Button";
 import { Entypo } from '@expo/vector-icons';
 import ScreenContainer from '../../components/ScreenContainer'
@@ -21,6 +21,10 @@ export default function Home() {
 
       </ContainerButton>    
       <ScreenContainer>
+        <ViewDaily>
+        <TextDaily>12.08.23</TextDaily>
+        </ViewDaily>
+     
         <HourDaily />
         <HourDaily />
         <HourDaily />
