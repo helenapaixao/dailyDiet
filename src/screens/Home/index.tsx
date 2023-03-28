@@ -21,9 +21,12 @@ export default function Home() {
 
       </ContainerButton>    
       <ScreenContainer>
-        <HourDaily>sdsd</HourDaily>
-        <HourDaily>sdsd</HourDaily>
-        <HourDaily>sdsd</HourDaily>
+        <HourDaily />
+        <HourDaily />
+        <HourDaily />
+        <HourDaily />
+        <HourDaily />
+
       </ScreenContainer>
     </Container>
   );

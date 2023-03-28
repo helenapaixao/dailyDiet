@@ -6,6 +6,7 @@ export const HourDaily = () => {
     <Container>
       <HourContainer>
         <HourText>08:00</HourText>
+        <HourText>08:00</HourText>
       </HourContainer>
     </Container>
   );

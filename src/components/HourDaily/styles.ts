@@ -13,9 +13,12 @@ margin-top: 10px;
 export const HourContainer = styled.View`
 justify-content: center;
 height: 49px;
+margin-left: 10px;
+
 `;
 
 export const HourText = styled.Text`
 font-size: 12px;
-font-weight: bold;
+font-family: 'Nunito_700Bold';
+color: #1B1D1E;
 `;

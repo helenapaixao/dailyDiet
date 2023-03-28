@@ -17,7 +17,7 @@ export const Container = styled.View`
     flex: 1;
     align-items: stretch;
     background-color: #FFF;
-    padding: 20px;
+    padding: 31px;
     padding-top: 0;
     padding-bottom: 80px;
 `;
