@@ -32,9 +32,12 @@ export const Title = styled.Text<ButtonProps>`
       : type === "secondary"
       ? "#333638"
       : "#333638"};
-  font-family: "Nunito_700Bold";
+  font-family: "Nunito_700Bold";;
+  text-align: center;
+
 `;
 
 export const ContentIcon = styled.View`
-  height: 16px;
+  height: 18px;
+  text-align: center;
 `;

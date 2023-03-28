@@ -13,7 +13,7 @@ export function Button({ title, icon, size, type, onPress }: ButtonProps) {
   return (
     <ButtonContainer onPress={onPress} title={title} icon={icon} size={size} type={type}>
       {icon && <ContentIcon>{icon}</ContentIcon>}
-      <Title>{title}</Title>
+      <Title type={type}>{title}</Title>
     </ButtonContainer>
   );
 }
