@@ -23,5 +23,5 @@ export const TextContent = styled.Text`
 
 export const ContainerImage = styled.View`
 align-self: flex-end;
-margin-right: 20px;
+margin-right: 12px;
 `;
