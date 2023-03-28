@@ -1,5 +1,5 @@
 import React from "react";
-import { Container,HourContainer,HourText, Line, ContentText } from "./styles";
+import { Container,HourContainer,HourText, Line, ContentText ,Status } from "./styles";
 
 export const HourDaily = () => {
   return (
@@ -8,6 +8,7 @@ export const HourDaily = () => {
         <HourText>08:00</HourText>
         <Line/>
         <ContentText>X-tudo</ContentText>
+        <Status/>
       </HourContainer>
     </Container>
   );

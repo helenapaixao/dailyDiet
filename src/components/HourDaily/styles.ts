@@ -35,3 +35,11 @@ align-items: center;
 margin-left: 10px;
 margin-right: 10px;
 `;
+
+export const Status = styled.View`
+width: 14px;
+height: 14px;
+background-color: #F3BABD;
+border-radius: 50%;
+margin-left: 180px;
+`;
