@@ -1,6 +1,6 @@
 import { View } from 'react-native';
 import styled from 'styled-components/native'
-import {HourDailyProps} from './index'
+import { HourDailyProps } from './index'
 
 
 export const Container = styled.View`
@@ -38,10 +38,10 @@ margin-left: 10px;
 margin-right: 10px;
 `;
 
-export const Status = styled(View)<HourDailyProps>`
+export const Status = styled(View) <HourDailyProps>`
 width: 14px;
 height: 14px;
-background-color: ${props => props.status ? '#F3BABDA6' : '#CBE4B4'};
+background-color: ${({ status }) => status === 'WARNING' ? '#CBE4B4' : '#F3BABD'};
 border-radius: 50%;
 margin-left: 180px;
 `;
