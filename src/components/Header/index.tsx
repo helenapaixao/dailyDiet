@@ -10,7 +10,6 @@ export function Header() {
       <Image source={require('../../../assets/Avatar.png')} />
       </HeaderContainer>
       </Content>
-    
     </Container>
   );
 }

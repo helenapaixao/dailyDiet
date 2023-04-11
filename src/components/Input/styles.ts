@@ -7,7 +7,7 @@ width: 100%;
 border-radius: 6px;
 `;
 
-export const Label = styled.TextInput`
+export const Label = styled.Text`
 color: #333638;
 font-size: 14px;
 font-family: "Nunito_700Bold";

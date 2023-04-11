@@ -1,11 +1,11 @@
 import React from "react";
 import Form from "@components/Form";
-import ScreenContainer from "@components/ScreenContainer";
+import { Container } from "./styles";
 
 export default function NewFood() {
   return (
-    <ScreenContainer>
+    <Container>
       <Form />
-    </ScreenContainer>
+    </Container>
   );
 }
