@@ -52,7 +52,12 @@ export default function Form() {
         name="lastName"
       />
 
-      <Button size="m" type="primary" title="Cadastrar refeição" onPress={handleSubmit(onSubmit)} />
+      <Button
+        size="m"
+        type="primary"
+        title="Cadastrar refeição"
+        onPress={handleSubmit(onSubmit)}
+      />
     </ScreenContainer>
   );
 }
