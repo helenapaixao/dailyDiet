@@ -1,6 +1,6 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import Home from "../screens/Home";
-import NewFood from '../screens/NewFood'
+import Home from "@screens/Home";
+import NewFood from '@screens/NewFood'
 
 export const AppRoutes = () => {
   const { Navigator, Screen } = createNativeStackNavigator();

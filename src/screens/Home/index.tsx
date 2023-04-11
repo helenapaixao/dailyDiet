@@ -1,5 +1,10 @@
-import { Header } from "../../components/Header";
-import { Card } from "../../components/Card";
+import { Header } from "@components/Header";
+import { Card } from "@components/Card";
+import { Button } from "@components/Button";
+import { Entypo } from "@expo/vector-icons";
+import ScreenContainer from "@components/ScreenContainer";
+import { HourDaily } from "@components/HourDaily";
+
 import {
   Container,
   Content,
@@ -8,10 +13,7 @@ import {
   ViewDaily,
   TextDaily,
 } from "./styles";
-import { Button } from "@components/Button";
-import { Entypo } from "@expo/vector-icons";
-import ScreenContainer from "@components/ScreenContainer";
-import { HourDaily } from "@components/HourDaily";
+
 import {useNavigation} from '@react-navigation/native'
 
 
