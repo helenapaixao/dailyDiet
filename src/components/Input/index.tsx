@@ -24,19 +24,17 @@ export function Input({
   onBlur,
 }: TextInputProps) {
   return (
-    <>
+    <Container>
       <Label>{label}</Label>
-      <Container>
-        <TextInput
-          placeholder={placeholder}
-          value={value}
-          editable={editable}
-          multiline={isMultiline}
-          maxLength={maxLength ? maxLength : isMultiline ? 1000 : 70}
-          onChange={onChange}
-          onBlur={onBlur}
-        />
-      </Container>
-    </>
+      <TextInput
+        placeholder={placeholder}
+        value={value}
+        editable={editable}
+        multiline={isMultiline}
+        maxLength={maxLength ? maxLength : isMultiline ? 1000 : 70}
+        onChange={onChange}
+        onBlur={onBlur}
+      />
+    </Container>
   );
 }
