@@ -1,8 +1,10 @@
 import { Text } from "react-native";
+import { useForm, Controller } from "react-hook-form";
+import {ButtonContainer} from './styles'
 import ScreenContainer from "@components/ScreenContainer";
 import { Input } from "@components/Input";
 import { Button } from "@components/Button";
-import { useForm, Controller } from "react-hook-form";
+
 
 export default function Form() {
   const {
@@ -51,13 +53,16 @@ export default function Form() {
         )}
         name="lastName"
       />
-
+      <ButtonContainer>
       <Button
         size="m"
         type="primary"
         title="Cadastrar refeição"
         onPress={handleSubmit(onSubmit)}
       />
+      </ButtonContainer>
+
+   
     </ScreenContainer>
   );
 }

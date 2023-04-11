@@ -20,7 +20,6 @@ export const ButtonContainer = styled.TouchableOpacity<ButtonProps>`
     type === "primary" ? "#333638" : type === "secondary" ? "#FFFF" : "#FFF"};
   justify-content: center;
   align-items: center;
-  border-radius: 6px;
 `;
 
 export const Title = styled.Text<ButtonProps>`
