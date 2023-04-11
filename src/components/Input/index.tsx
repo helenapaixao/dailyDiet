@@ -1,19 +1,31 @@
 import React from "react";
-import { TextInputProps } from "react-native";
-import { Container, Label } from "./styles";
 
-interface InputProps extends TextInputProps {
+import { Container, Label, TextInput  } from "./styles";
+
+export interface TextInputProps {
   label: string;
+  placeholder?: string;
+  value?: string;
+  onChange?: (string) => void;
+  onBlur?: () => void;
 }
 
-export function Input({ label }: InputProps) {
+export function Input({
+  label,
+  placeholder,
+  value,
+  onChange,
+  onBlur,
+}: TextInputProps) {
   return (
-    <>
-    <Label/>
-     <Container>
-
+    <Container>
+      <Label>{label}</Label>
+      <TextInput
+        placeholder={placeholder}
+        value={value}
+        onChange={onChange}
+        onBlur={onBlur}
+      />
     </Container>
-    </>
-   
   );
 }
