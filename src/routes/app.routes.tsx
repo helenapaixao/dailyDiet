@@ -1,5 +1,5 @@
-import { Header } from "@components/Header";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import { Button } from "@components/Button";
 import Home from "@screens/Home";
 import NewFood from "@screens/NewFood";
 
@@ -31,6 +31,7 @@ export const AppRoutes = () => {
           },
           headerTintColor: "#1B1D1E",
           headerTitleStyle: {
+            fontFamily:"Nunito_700Bold",
             fontWeight: "bold",
           },
         }}

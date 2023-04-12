@@ -1,11 +1,11 @@
-import { ButtonContainer } from "./styles";
-import ScreenContainer from "@components/ScreenContainer";
+import {View} from 'react-native'
+import { ButtonContainer, Container } from "./styles";
 import { Input } from "@components/Input";
 import { Button } from "@components/Button";
 
 export default function Form() {
   return (
-    <ScreenContainer>
+    <Container>
       <Input label="Nome" />
       <Input label="Descrição" isMultiline={true} maxLength={200}  />
 
@@ -17,6 +17,6 @@ export default function Form() {
           onPress={() => null}
         />
       </ButtonContainer>
-    </ScreenContainer>
+    </Container>
   );
 }

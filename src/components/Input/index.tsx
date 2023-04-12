@@ -6,7 +6,7 @@ export interface TextInputProps {
   label: string;
   placeholder?: string;
   value?: string;
-  editable?: boolean;
+  //editable?: boolean;
   isMultiline?: boolean;
   maxLength?: number;
   onChange?: (string) => void;
@@ -17,7 +17,7 @@ export function Input({
   label,
   placeholder,
   value,
-  editable,
+  //editable,
   isMultiline,
   maxLength,
   onChange,
@@ -29,7 +29,7 @@ export function Input({
       <TextInput
         placeholder={placeholder}
         value={value}
-        editable={editable}
+        //editable={editable}
         multiline={isMultiline}
         maxLength={maxLength ? maxLength : isMultiline ? 1000 : 70}
         onChange={onChange}
