@@ -32,7 +32,7 @@ export const AppRoutes = () => {
           },
           headerTintColor: "#1B1D1E",
           headerTitleStyle: {
-            fontFamily:"Nunito_700Bold",
+            fontFamily: "Nunito_700Bold",
             fontWeight: "bold",
           },
         }}
