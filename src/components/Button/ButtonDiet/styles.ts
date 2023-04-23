@@ -25,7 +25,10 @@ export const Title = styled.Text<ButtonProps>`
   text-align: center;
 `;
 
-export const ContentIcon = styled.View`
-  height: 18px;
-  text-align: center;
+export const Status = styled.View<ButtonProps>`
+  width: 14px;
+  height: 14px;
+  background-color: ${({ type }) =>
+    type === "yes" ? "#639339" : "#BF3B44"};
+  border-radius: 50%;
 `;
