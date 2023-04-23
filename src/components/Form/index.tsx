@@ -10,8 +10,8 @@ export default function Form() {
       <Input label="Descrição" isMultiline={true} maxLength={200} />
 
       <ButtonContainer>
-        <ButtonDiet onPress={() => null} title="Não" type="no" />
         <ButtonDiet onPress={() => null} title="Sim" type="yes" />
+        <ButtonDiet onPress={() => null} title="Não" type="no" />
       </ButtonContainer>
       <Button
         size="m"
