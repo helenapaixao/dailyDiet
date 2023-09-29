@@ -1,5 +1,4 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { Button } from "@components/Button";
 import Home from "@screens/Home";
 import NewFood from "@screens/NewFood";
 

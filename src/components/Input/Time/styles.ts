@@ -1,4 +1,4 @@
-import styled from "styled-components/native";
+import styled from 'styled-components/native'
 
 export const View = styled.Pressable`
   background: #332;
@@ -10,8 +10,8 @@ export const View = styled.Pressable`
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-`;
+`
 
 export const Text = styled.Text`
   color: #3223;
-`;
+`
