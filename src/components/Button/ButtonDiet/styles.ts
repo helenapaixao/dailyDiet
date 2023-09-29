@@ -1,4 +1,4 @@
-import styled from 'styled-components/native'
+import styled, { css } from 'styled-components/native'
 import { ButtonProps } from '.'
 
 export const ButtonContainer = styled.TouchableOpacity<ButtonProps>`
@@ -6,15 +6,27 @@ export const ButtonContainer = styled.TouchableOpacity<ButtonProps>`
   flex-direction: row;
   height: 50px;
   border-radius: 6px;
-  border-color: ${({ type }) =>
-    type === 'no' ? '#639339' : type === 'yes' ? '#BF3B44' : '#BF3B44'};
-  border: 1px;
+  border-color: #eff0f0;
+  border-width: 1px;
   width: 148px;
   padding: 0 12px;
-  background-color: ${({ type }) =>
-    type === 'no' ? '#F4E6E7' : type === 'yes' ? '#E5F0DB' : '#EFF0F0'};
+  background-color: #eff0f0;
+
   justify-content: center;
+  display: flex;
   align-items: center;
+  ${({ type, isPressed }) => {
+    if (isPressed) {
+      return css`
+        border-color: ${type === 'no' ? '#BF3B44' : '#639339'};
+        background-color: ${type === 'no' ? '#F4E6E7' : '#E5F0DB'};
+      `
+    } else {
+      return css`
+        background-color: #eff0f0;
+      `
+    }
+  }};
 `
 
 export const Title = styled.Text<ButtonProps>`
