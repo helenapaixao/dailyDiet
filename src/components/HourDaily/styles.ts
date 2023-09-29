@@ -41,6 +41,7 @@ export const Status = styled.View<HourDailyProps>`
   height: 14px;
   background-color: ${({ status }) =>
     status === 'WARNING' ? '#CBE4B4' : '#F3BABD'};
-  margin-left: 180px;
   border-radius: 20px;
+  position: absolute;
+  margin-left: 280px;
 `
