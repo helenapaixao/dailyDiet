@@ -8,12 +8,13 @@ export const Card = () => {
 
 
   interface StatisticsScreenParams {
-  headerTitle: string;
+    headerTitle: string;
+    headheaderSubTitle: string
 }
-   const handleCardPress = ({headerTitle}: StatisticsScreenParams) => {
-    // Passa o título do card como parâmetro para a tela de estatísticas
+   const handleCardPress = ({headerTitle, headheaderSubTitle}: StatisticsScreenParams) => {
     navigation.navigate("Statistics", {
-      headerTitle: "90,86% das refeições dentro da dieta",
+      headerTitle: "90,86% ",
+      headerSubTitle: "das refeições dentro da dieta"
     });
   }; 
 

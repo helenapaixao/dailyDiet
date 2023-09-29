@@ -14,8 +14,7 @@ import {
   TextDaily,
 } from "./styles";
 
-import {useNavigation} from '@react-navigation/native'
-
+import { useNavigation } from "@react-navigation/native";
 
 export default function Home() {
   const navigation = useNavigation();
@@ -29,7 +28,7 @@ export default function Home() {
       <ContainerButton>
         <Button
           title="Nova Refeição"
-          onPress={() => navigation.navigate('NewFood')}
+          onPress={() => navigation.navigate("NewFood")}
           size="m"
           type="primary"
           icon={<Entypo name="plus" size={18} color="white" />}
@@ -40,17 +39,17 @@ export default function Home() {
           <TextDaily>29.09.23</TextDaily>
         </ViewDaily>
         <HourDaily hour="20:00" content="X-Tudo" status="APROVED" />
-        <HourDaily hour="16:00" content="Whey"   status="WARNING" />
-        <HourDaily hour="16:00" content="Whey"   status="WARNING" />
+        <HourDaily hour="16:00" content="Whey" status="WARNING" />
+        <HourDaily hour="16:00" content="Whey" status="WARNING" />
         <HourDaily hour="20:00" content="X-Tudo" status="APROVED" />
         <HourDaily hour="20:00" content="X-Tudo" status="APROVED" />
         <ViewDaily>
           <TextDaily>30.09.23</TextDaily>
           <HourDaily hour="20:00" content="X-Tudo" status="APROVED" />
-        <HourDaily hour="16:00" content="Whey"   status="WARNING" />
-        <HourDaily hour="16:00" content="Whey"   status="WARNING" />
-        <HourDaily hour="20:00" content="X-Tudo" status="APROVED" />
-        <HourDaily hour="20:00" content="X-Tudo" status="APROVED" />
+          <HourDaily hour="16:00" content="Whey" status="WARNING" />
+          <HourDaily hour="16:00" content="Whey" status="WARNING" />
+          <HourDaily hour="20:00" content="X-Tudo" status="APROVED" />
+          <HourDaily hour="20:00" content="X-Tudo" status="APROVED" />
         </ViewDaily>
       </ScreenContainer>
     </Container>
