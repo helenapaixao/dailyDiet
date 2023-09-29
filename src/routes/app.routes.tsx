@@ -1,6 +1,7 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "@screens/Home";
 import NewFood from "@screens/NewFood";
+import Statistics from "@screens/Statistics";
 
 export const AppRoutes = () => {
   const { Navigator, Screen } = createNativeStackNavigator();
@@ -36,6 +37,23 @@ export const AppRoutes = () => {
           },
         }}
       />
+      <Screen
+        name="Statistics"
+        component={Statistics}
+        options={{
+          headerShadowVisible:false,
+          headerBackTitleVisible: false,
+          title:"",
+           headerTitle: undefined,
+          headerStyle: {
+            backgroundColor: "#E5F0DB",
+
+          },
+          headerTintColor: "#639339",
+          
+        }}
+      />
+      
     </Navigator>
   );
 };

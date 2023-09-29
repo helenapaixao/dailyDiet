@@ -1,6 +1,6 @@
 import styled from 'styled-components/native'
 
-export const Container = styled.View`
+export const Container = styled.TouchableOpacity`
   justify-content: center;
   background-color: #e5f0db;
   width: 327px;
