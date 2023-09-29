@@ -11,6 +11,7 @@ export const ButtonContainer = styled.TouchableOpacity<ButtonProps>`
   width: 148px;
   padding: 0 12px;
   background-color: #eff0f0;
+  margin-bottom: 10px;
 
   justify-content: center;
   display: flex;
@@ -38,8 +39,8 @@ export const Title = styled.Text<ButtonProps>`
 `
 
 export const Status = styled.View<ButtonProps>`
-  width: 14px;
-  height: 14px;
+  width: 8px;
+  height: 8px;
   background-color: ${({ type }) => (type === 'yes' ? '#639339' : '#BF3B44')};
   border-radius: 20px;
 `

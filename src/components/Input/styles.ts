@@ -2,7 +2,7 @@ import styled from 'styled-components/native'
 
 export const Container = styled.View`
   width: 100%;
-  //border-radius: 6px;
+  border-radius: 6px;
   margin-top: 30px;
 `
 
@@ -21,7 +21,7 @@ export const TextInput = styled.TextInput<{
   height: ${({ multiline }) => (multiline ? '408px' : '120px')};
   border-color: #dddedf;
   border-width: 1px;
-  // border-radius: 6px;
+  border-radius: 6px;
   height: 48px;
   display: flex;
 `

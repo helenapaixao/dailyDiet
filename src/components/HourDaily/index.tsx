@@ -9,9 +9,9 @@ import {
 } from "./styles";
 
 export type HourDailyProps = {
-  hour: string;
-  content: string;
-  status: "APROVED" | "WARNING";
+  hour?: string;
+  content?: string;
+  status?: "APROVED" | "WARNING";
 };
 
 export const HourDaily = ({ hour, content, status }: HourDailyProps) => {
@@ -21,7 +21,7 @@ export const HourDaily = ({ hour, content, status }: HourDailyProps) => {
         <HourText>{hour}</HourText>
         <Line />
         <ContentText>{content}</ContentText>
-        <Status status={status} />
+        <Status status={status}  />
       </HourContainer>
     </Container>
   );

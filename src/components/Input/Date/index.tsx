@@ -7,7 +7,7 @@ export default function DateInput({ children, focused, type = 'background-grey',
   return (
     <Container testID="date-input" onPress={onPress} focused={focused} type={type} disabled={!onPress}>
       <Text>{children}</Text>
-      <IconContainer>z'
+      <IconContainer>
       </IconContainer>
     </Container>
   );

@@ -1,9 +1,6 @@
 export enum CustomIcons {
-    'arrow-left' = 'arrow-left',
-    'arrow-right' = 'arrow-right',
+  'arrow-left' = 'arrow-left',
+  'arrow-right' = 'arrow-right',
 }
 
-
-const hexToDecimal = (hex) => parseInt(hex, 16);
-
-
+const hexToDecimal = (hex: string) => parseInt(hex, 16)

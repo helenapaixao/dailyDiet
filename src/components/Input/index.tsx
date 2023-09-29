@@ -9,7 +9,7 @@ export interface TextInputProps {
   //editable?: boolean;
   isMultiline?: boolean;
   maxLength?: number;
-  onChange?: (string) => void;
+  onChange?: () => void;
   onBlur?: () => void;
 }
 
