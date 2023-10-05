@@ -25,6 +25,7 @@ export const AppRoutes = () => {
         name="NewFood"
         component={NewFood}
         options={{
+          headerShadowVisible:false,
           headerBackTitleVisible: false,
           title: "Nova refeição",
           headerStyle: {
