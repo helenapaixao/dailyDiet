@@ -2,13 +2,11 @@ import styled from 'styled-components/native'
 
 export const Container = styled.View`
   background-color: #e5f0db;
-  width: 100%;
-  height: 100%;
+  flex: 1;
 `
 
 export const Header = styled.View`
   background-color: #e5f0db;
-  height: 100px;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -17,6 +15,7 @@ export const TitlePercent = styled.Text`
   font-family: 'Nunito_700Bold';
   font-size: 32px;
   color: #1b1d1e;
+  font-weight: bold;
 `
 
 export const TextContent = styled.Text`
@@ -36,5 +35,15 @@ export const Content = styled.View`
   align-items: center;
   margin-top: 100px;
   width: 100%;
-  height: 100%;
+  height: 85%;
+`
+
+export const Title = styled.Text`
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: -90px;
+`
+
+export const ContainerFooter = styled.View`
+  flex-direction: row;
 `

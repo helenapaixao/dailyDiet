@@ -1,6 +1,4 @@
 import React from "react";
-import Form from "@components/Form";
-import { Text, View } from "react-native";
 import { useRoute } from "@react-navigation/native";
 import {
   Container,
@@ -8,7 +6,11 @@ import {
   TextContent,
   Content,
   Header,
+  Title,
+  ContainerFooter,
 } from "./styles";
+import { CardInformation } from "@components/CardInformation";
+import { MiniCard } from "@components/MiniCard";
 
 export default function Statistics() {
   const route = useRoute();
@@ -24,9 +26,25 @@ export default function Statistics() {
         <TextContent>{headerSubTitle}</TextContent>
       </Header>
       <Content>
-        <TitlePercent>Oi</TitlePercent>
+        <Title>Estatísticas gerais</Title>
+        <CardInformation
+          title="22"
+          textInformation="melhor sequência de pratos dentro da dieta"
+        />
+        <CardInformation title="109" textInformation="refeições registradas" />
+        <ContainerFooter>
+          <MiniCard
+            title="22"
+            textInformation="refeições dentro da dieta"
+            type={"positive"}
+          />
+          <MiniCard
+            title="10"
+            textInformation="refeições fora da dieta"
+            type={"negative"}
+          />
+        </ContainerFooter>
       </Content>
-    
     </Container>
   );
 }
