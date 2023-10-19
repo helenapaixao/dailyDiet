@@ -55,6 +55,7 @@ export function Input({
           is24Hour={true}
           display="default"
           onChange={handleDateChange}
+          
         />
       )}
       {!isDateTimePicker && (
