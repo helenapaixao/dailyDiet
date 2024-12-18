@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { View, Text, TouchableOpacity } from "react-native";
-import DateTimePicker from "@react-native-community/datetimepicker"; // Importe o DateTimePicker
+import { Text, TouchableOpacity } from "react-native";
+import DateTimePicker from "@react-native-community/datetimepicker";
 import { Container, Label, TextInput } from "./styles";
-import { format } from "date-fns"; // Importe a função de formatação de datas
+import { format } from "date-fns"; 
+import { ptBR } from "date-fns/locale";
 
 export interface TextInputProps {
   label: string;
@@ -10,9 +11,9 @@ export interface TextInputProps {
   value?: string;
   isMultiline?: boolean;
   maxLength?: number;
-  onChange?: (text: string) => void; // Modifique o tipo de retorno da função onChange
+  onChange?: (text: string) => void; 
   onBlur?: () => void;
-  isDateTimePicker?: boolean; // Nova propriedade para indicar que é um campo de data e hora
+  isDateTimePicker?: boolean; 
 }
 
 export function Input({
@@ -23,7 +24,7 @@ export function Input({
   maxLength,
   onChange,
   onBlur,
-  isDateTimePicker, // Nova propriedade para indicar que é um campo de data e hora
+  isDateTimePicker,
 }: TextInputProps) {
   const [date, setDate] = useState<Date | undefined>(
     value ? new Date(value) : undefined
@@ -34,8 +35,10 @@ export function Input({
     if (selectedDate !== undefined) {
       setShowPicker(false);
       setDate(selectedDate);
-      const formattedDate = format(selectedDate, "dd/MM/yyyy"); // Formate a data para "dd/MM/yyyy"
-      onChange && onChange(formattedDate); // Chame a função onChange com a nova data formatada
+      const formattedDate = format(selectedDate, "dd/MM/yyyy", {locale: ptBR}); 
+      onChange && onChange(formattedDate); 
+    } else {
+      setShowPicker(false)
     }
   };
 
@@ -64,7 +67,7 @@ export function Input({
           value={value}
           multiline={isMultiline}
           maxLength={maxLength ? maxLength : isMultiline ? 1000 : 70}
-          onChangeText={onChange} // Use onChangeText para campos de texto normais
+          onChangeText={onChange} 
           onBlur={onBlur}
         />
       )}
