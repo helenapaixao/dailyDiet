@@ -1,10 +1,12 @@
 import styled from 'styled-components/native'
-import { CardInformationProps } from '.'
+import type { CardInformationProps } from '.'
 
 export const Container = styled.View<{ type: CardInformationProps['type'] }>`
   background-color: ${(props) =>
     props.type === 'positive' ? '#E5F0DB' : '#F4E6E7'};
-  width: 157px;
+  width: 150px;
+  height: 100px;
+  padding: 16px;
   border-radius: 8px;
   height: 107px;
   align-items: center;
