@@ -7,16 +7,19 @@ export const Container = styled.TouchableOpacity`
   border-radius: 8px;
   height: 102px;
   align-items: center;
+  padding: 16px;
 `
 
 export const TitlePercent = styled.Text`
   font-family: 'Nunito_700Bold';
   font-size: 32px;
+  font-weight: bold;
   color: #1b1d1e;
 `
 
 export const TextContent = styled.Text`
   font-size: 14px;
+  text-align: center;
   color: #333638;
   font-family: 'Nunito_400Regular';
 `
