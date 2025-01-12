@@ -42,6 +42,9 @@ export const Content = styled.View`
 export const Title = styled.Text`
   font-size: 14px;
   font-weight: bold;
+  color: #1B1D1E;
+  margin-bottom: 23px;
+
 `
 
 export const ContainerFooter = styled.View`
