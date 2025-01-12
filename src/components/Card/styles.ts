@@ -8,6 +8,7 @@ export const Container = styled.TouchableOpacity`
   height: 102px;
   align-items: center;
   padding: 16px;
+  position: relative;
 `
 
 export const TitlePercent = styled.Text`
@@ -15,6 +16,8 @@ export const TitlePercent = styled.Text`
   font-size: 32px;
   font-weight: bold;
   color: #1b1d1e;
+  text-align: center;
+
 `
 
 export const TextContent = styled.Text`
@@ -25,6 +28,8 @@ export const TextContent = styled.Text`
 `
 
 export const ContainerImage = styled.View`
-  align-self: flex-end;
-  margin-right: 12px;
+   position: absolute; 
+  top: 8px;
+  right: 8px;
+ align-self: flex-end;
 `
