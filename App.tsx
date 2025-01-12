@@ -7,7 +7,7 @@ import {
   Nunito_400Regular_Italic,
 } from "@expo-google-fonts/nunito";
 import { NavigationContainer } from "@react-navigation/native";
-import { AppRoutes } from "./src/routes/app.routes";
+import { AppRoutes } from "./src/components/ScreenContainer/routes/app.routes";
 import { Loading } from "./src/components/Loading";
 export default function App() {
   const [fontsLoaded] = useFonts({
