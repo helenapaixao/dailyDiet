@@ -36,12 +36,12 @@ export const Content = styled.View`
   margin-top: 100px;
   width: 100%;
   height: 85%;
+  justify-content: flex-start;
 `
 
 export const Title = styled.Text`
   font-size: 14px;
   font-weight: bold;
-  margin-top: -90px;
 `
 
 export const ContainerFooter = styled.View`
