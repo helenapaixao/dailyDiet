@@ -27,8 +27,9 @@ export function Input({
   isDateTimePicker,
 }: TextInputProps) {
   const [date, setDate] = useState<Date | undefined>(
-    value ? new Date(value) : undefined
+    value && !isNaN(Date.parse(value)) ? new Date(value) : undefined
   );
+  
   const [showPicker, setShowPicker] = useState(false);
 
   const handleDateChange = (event: Event, selectedDate: Date | undefined) => {
