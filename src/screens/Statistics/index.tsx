@@ -17,7 +17,7 @@ export default function Statistics() {
   const params = route.params as
     | { headerTitle: string; headerSubTitle: string }
     | undefined;
-  const headerTitle = params?.headerTitle || "iii"; // Defina um título padrão se não houver parâmetro
+  const headerTitle = params?.headerTitle || "iii"; 
   const headerSubTitle = params?.headerSubTitle || "";
   return (
     <Container>
