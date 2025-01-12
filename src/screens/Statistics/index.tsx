@@ -17,8 +17,9 @@ export default function Statistics() {
   const params = route.params as
     | { headerTitle: string; headerSubTitle: string }
     | undefined;
-  const headerTitle = params?.headerTitle || "iii"; 
-  const headerSubTitle = params?.headerSubTitle || "";
+  const headerTitle = params?.headerTitle || "90,86%";
+  const headerSubTitle = params?.headerSubTitle || "das refeições dentro da dieta";
+
   return (
     <Container>
       <Header>
@@ -34,7 +35,7 @@ export default function Statistics() {
         <CardInformation title="109" textInformation="refeições registradas" />
         <ContainerFooter>
           <MiniCard
-            title="22"
+            title="99"
             textInformation="refeições dentro da dieta"
             type={"positive"}
           />
