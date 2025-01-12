@@ -19,6 +19,7 @@ export const Title = styled.Text`
   font-family: 'Nunito_700Bold';
   font-size: 24px;
   color: #1b1d1e;
+  margin-bottom: 8px;
 `
 
 export const TextInformation = styled.Text`
