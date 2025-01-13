@@ -13,18 +13,6 @@ export const Label = styled.Text`
   margin-bottom: 8px;
 `;
 
-export const Input = styled.TextInput`
-  height: 50px;
-  border-width: 1px;
-  border-color: #d9d9d9; 
-  border-radius: 6px;
-  padding: 10px;
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 16px;
-  background-color: #fff;
-`;
-
 export const Row = styled.View`
   flex-direction: row;
   justify-content: space-between;

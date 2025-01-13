@@ -5,7 +5,6 @@ import {
   ButtonContainer,
   Container,
   Row,
-  Label,
   TextDiet,
 } from "./styles";
 import { Button } from "@components/Button";
@@ -27,8 +26,6 @@ export default function Form() {
   };
 
   const handleSubmit = () => {
-    
-
     setShowFeedback(true);
   };
 
