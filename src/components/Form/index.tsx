@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Alert, View } from "react-native";
+import { Input } from "@components/Input";
 import {
   ButtonContainer,
   Container,
   Row,
   Label,
-  Input,
   TextDiet,
 } from "./styles";
 import { Button } from "@components/Button";
@@ -36,47 +36,31 @@ export default function Form() {
     <>
       {!showFeedback ? (
         <Container>
-          <Label>Nome</Label>
           <Input
-            placeholder="Digite o nome"
             value={name}
-            onChangeText={setName}
+            onChange={setName}
+            label="Nome"
           />
-          <Label>Descrição</Label>
           <Input
-            placeholder="Digite a descrição"
             value={description}
-            multiline
-            onChangeText={setDescription}
-          />
+            isMultiline
+            onChange={setDescription} 
+            label={"Descrição"} 
+            />
 
           <Row style={{ justifyContent: "space-between", marginBottom: 16 }}>
             <View style={{ flex: 1, marginRight: 8 }}>
-              <Label>Data</Label>
               <Input
-                placeholder="dd/mm/aaaa"
+              label="Data"
                 value={date}
-                onChangeText={setDate}
-                style={{
-                  padding: 10,
-                  borderRadius: 8,
-                  borderWidth: 1,
-                  borderColor: "#D9D9D9",
-                }}
+                onChange={setDate}
               />
             </View>
             <View style={{ flex: 1 }}>
-              <Label>Hora</Label>
               <Input
-                placeholder="hh:mm"
+              label="Hora"
                 value={time}
-                onChangeText={setTime}
-                style={{
-                  padding: 10,
-                  borderRadius: 8,
-                  borderWidth: 1,
-                  borderColor: "#D9D9D9",
-                }}
+                onChange={setTime}
               />
             </View>
           </Row>
@@ -110,7 +94,7 @@ export default function Form() {
               ? "Você continua dentro da dieta. Muito bem!"
               : "Você saiu da dieta dessa vez, mas continue se esforçando e não desista!"
           }
-          isPositive={selectedOption === "yes"}
+          isPositive={selectedOption === "no"}
         />
       )}
     </>
