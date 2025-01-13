@@ -1,6 +1,8 @@
 import React from "react";
-import { View, Text, Button } from "react-native";
+import { View, Text, Image } from "react-native";
 import styled from "styled-components/native";
+import IllustrationNegative from "../../../assets/Illustration_negative.png";
+import IllustrationPositive from "../../../assets/Illustration_positive.png";
 
 interface FeedBackProps {
   feedbackMessage: string;
@@ -10,10 +12,16 @@ interface FeedBackProps {
 export default function FeedBack({ feedbackMessage, isPositive }: FeedBackProps) {
   return (
     <FeedbackContainer>
-      <FeedbackMessage isPositive={isPositive}>
-        {isPositive ? "Continue assim!" : "Não desanime!"}
+       <FeedbackMessage isPositive={isPositive}>
+        {isPositive ? "Continue assim!" : "Que pena!"}
       </FeedbackMessage>
       <Text>{feedbackMessage}</Text>
+      <FeedbackImage
+        source={isPositive ? IllustrationPositive : IllustrationNegative}
+        resizeMode="contain"
+      />
+     
+      
       <GoBackButton onPress={() => console.log("Ir para página inicial")}>
         <GoBackText>Ir para a página inicial</GoBackText>
       </GoBackButton>
@@ -27,6 +35,12 @@ const FeedbackContainer = styled.View`
   justify-content: center;
   padding: 24px;
   background-color: #fff;
+`;
+
+const FeedbackImage = styled.Image`
+  width: 200px;
+  height: 200px;
+  margin-bottom: 16px;
 `;
 
 const FeedbackMessage = styled.Text<{ isPositive: boolean }>`
