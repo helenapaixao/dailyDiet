@@ -27,16 +27,7 @@ export default function Form() {
   };
 
   const handleSubmit = () => {
-    if (
-      !name.trim() ||
-      !description.trim() ||
-      !date.trim() ||
-      !time.trim() ||
-      !selectedOption
-    ) {
-      Alert.alert("Erro", "Por favor, preencha todos os campos.");
-      return;
-    }
+    
 
     setShowFeedback(true);
   };
@@ -117,7 +108,7 @@ export default function Form() {
           feedbackMessage={
             selectedOption === "yes"
               ? "Você continua dentro da dieta. Muito bem!"
-              : "Que pena! Você saiu da dieta, mas continue tentando!"
+              : "Você saiu da dieta dessa vez, mas continue se esforçando e não desista!"
           }
           isPositive={selectedOption === "yes"}
         />
