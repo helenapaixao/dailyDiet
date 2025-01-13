@@ -36,7 +36,7 @@ export default function Home() {
       </ContainerButton>
       <ScreenContainer>
         <ViewDaily>
-          <TextDaily>29.09.23</TextDaily>
+          <TextDaily>29.09.25</TextDaily>
         </ViewDaily>
         <HourDaily hour="20:00" content="X-Tudo" status="APROVED" />
         <HourDaily hour="16:00" content="Whey" status="WARNING" />
@@ -44,7 +44,7 @@ export default function Home() {
         <HourDaily hour="20:00" content="X-Tudo" status="APROVED" />
         <HourDaily hour="20:00" content="X-Tudo" status="APROVED" />
         <ViewDaily>
-          <TextDaily>30.09.23</TextDaily>
+          <TextDaily>30.09.25</TextDaily>
           <HourDaily hour="20:00" content="X-Tudo" status="APROVED" />
           <HourDaily hour="16:00" content="Whey" status="WARNING" />
           <HourDaily hour="16:00" content="Whey" status="WARNING" />
