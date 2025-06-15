@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, Label, TextInput } from "./styles";
+import { Label } from "@components/Label";
+import { Container, TextInput } from "./styles";
 
 export interface TextInputProps {
   label: string;

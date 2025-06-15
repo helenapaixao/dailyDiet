@@ -1,16 +1,13 @@
 import styled from "styled-components/native";
 
 export const Container = styled.View`
-  flex: 1;
+ background-color: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   padding: 24px;
-  background-color: #fff;
-`;
-
-export const Label = styled.Text`
-  font-size: 16px;
-  color: #333638;
-  font-family: "Nunito_700Bold";
-  margin-bottom: 8px;
+  margin-top: -16px;
+  flex: 1;
+  align-items: center;
 `;
 
 export const Row = styled.View`
