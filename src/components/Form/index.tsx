@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {  View } from "react-native";
+import { View } from "react-native";
 import { Input } from "@components/Input";
 import {
   ButtonContainer,
@@ -34,44 +34,32 @@ export default function Form() {
     <>
       {!showFeedback ? (
         <Container>
-          <Input
-            value={name}
-            onChange={setName}
-            label="Nome"
-          />
+          <Input value={name} onChange={setName} label="Nome" />
           <Input
             value={description}
             isMultiline
-            onChange={setDescription} 
-            label={"Descrição"} 
-            />
+            onChange={setDescription}
+            label={"Descrição"}
+          />
 
           <Row style={{ justifyContent: "space-between", marginBottom: 16 }}>
             <View style={{ flex: 1, marginRight: 8 }}>
-              <Input
-              label="Data"
-                value={date}
-                onChange={setDate}
-              />
+              <Input label="Data" value={date} onChange={setDate} />
             </View>
             <View style={{ flex: 1 }}>
-              <Input
-              label="Hora"
-                value={time}
-                onChange={setTime}
-              />
+              <Input label="Hora" value={time} onChange={setTime} />
             </View>
           </Row>
 
           <TextDiet>Está dentro da dieta?</TextDiet>
           <ButtonContainer>
-          <ButtonWrapper>
-            <ButtonDiet
-              onPress={() => handleSelectOption("yes")}
-              title="Sim"
-              type="yes"
-              selected={selectedOption === "yes"}
-            />
+            <ButtonWrapper>
+              <ButtonDiet
+                onPress={() => handleSelectOption("yes")}
+                title="Sim"
+                type="yes"
+                selected={selectedOption === "yes"}
+              />
             </ButtonWrapper>
             <ButtonDiet
               onPress={() => handleSelectOption("no")}
