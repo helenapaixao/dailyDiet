@@ -1,3 +1,4 @@
+import { Button } from "react-native";
 import styled from "styled-components/native";
 
 export const Container = styled.View`
@@ -31,4 +32,15 @@ export const ButtonContainer = styled.View`
   justify-content: space-between;
   margin-top: 16px;
   margin-bottom: 32px;
+  
+`;
+
+export const ButtonWrapper = styled.View`
+  flex: 1;
+  margin-right: 8px; /* Espaço entre botões */
+`;
+
+export const ButtonWrapperLast = styled.View`
+  flex: 1;
+  margin-right: 0; /* Último sem margem */
 `;

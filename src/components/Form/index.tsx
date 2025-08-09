@@ -3,6 +3,7 @@ import {  View } from "react-native";
 import { Input } from "@components/Input";
 import {
   ButtonContainer,
+  ButtonWrapper,
   Container,
   Row,
   TextDiet,
@@ -64,12 +65,14 @@ export default function Form() {
 
           <TextDiet>Está dentro da dieta?</TextDiet>
           <ButtonContainer>
+          <ButtonWrapper>
             <ButtonDiet
               onPress={() => handleSelectOption("yes")}
               title="Sim"
               type="yes"
               selected={selectedOption === "yes"}
             />
+            </ButtonWrapper>
             <ButtonDiet
               onPress={() => handleSelectOption("no")}
               title="Não"
